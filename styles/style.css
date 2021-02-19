@@ -1,9 +1,26 @@
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: #113340;
+  width: 100%;
+}
+
 .advertising_top .ad_left {
   display: inline-block;
   background-image: url("../images/advertising/nesna-kommune-84197237-1466155669493_redigert.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-
   width: 907px;
   height: 325px;
+}
+
+.advertising_top .ad_right {
+  display: inline-block;
+  background-image: url("../images/advertising/raise-3338589_640.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 446;
+  height: 325;
 }
