@@ -1,0 +1,9 @@
+.advertising_top .ad_left {
+  display: inline-block;
+  background-image: url("../images/advertising/nesna-kommune-84197237-1466155669493_redigert.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  width: 907px;
+  height: 325px;
+}
