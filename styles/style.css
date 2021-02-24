@@ -1,56 +1,97 @@
+/*global*/
 body {
-  margin: 0px;
+  margin: 0;
+  min-width: 1200px;
+  font-family: "Montserrat";
+}
+
+/*header and footer*/
+header,
+footer {
+  width: 100%;
+  height: 116px;
+  background-color: #113340;
 }
 
 header {
-  background-color: #113340;
-  width: 100%;
+  position: sticky;
+  top: 0;
+  opacity: 0.9;
 }
 
-.advertising_top .ad_left {
-  display: inline-block;
-  background-image: url("../images/advertising/nesna-kommune-84197237-1466155669493_redigert.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 907px;
-  height: 325px;
-}
-
-.advertising_top .ad_right {
-  display: inline-block;
-  background-image: url("../images/advertising/raise-3338589_640.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 446px;
-  height: 325px;
-}
-
-.ad {
+.logo {
   float: left;
-  max-width: 33.33%;
+  margin-left: 50px;
+  padding: 0px;
+  margin-bottom: 0;
+  height: 116px;
 }
 
-.advertising_bottom .ad_left {
+.logo img {
+  width: 215px;
+  height: 116px;
+}
+
+header ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  height: 116px;
+}
+
+header ul img {
+  width: 46px;
+  height: 42px;
+}
+
+header ul li {
   display: inline-block;
-  background-image: url("../images/advertising/person-yellow-raincoat-gloomy-forest-hill-rain_272999-71.jpg");
-  background-size: 446px 344px;
-  background-repeat: no-repeat;
-  width: 677px;
-  height: 344px;
-  background-color: #113340;
+  height: 75px;
+  margin: 30px;
 }
 
-.advertising_bottom .ad_right {
-  display: inline-block;
-  background-image: url("../images/advertising/adventure-4891499_640.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 677px;
-  height: 344px;
+header ul li a {
+  float: left;
+  color: #ccd9cc;
+  text-decoration: none;
 }
 
-footer {
-  background-color: #113340;
+/*sub-menu*/
+.sub-menu {
+  clear: both;
   width: 100%;
-  height: 194px;
+  height: 53px;
+  background-color: #ccd9cc;
+  box-shadow: 0px 4px 4px gray;
+  margin: 0;
+}
+
+.sub-menu ul {
+  float: left;
+  margin: 0px;
+  padding: 0;
+}
+
+.sub-menu ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 17px 30px;
+}
+
+.sub-menu ul li a {
+  color: #113340;
+  text-decoration: none;
+}
+
+.sub-menu li:hover {
+  background-color: #e2a413;
+}
+
+.sub-menu input {
+  float: right;
+  width: 446px;
+  height: 34px;
+  margin-top: 6px;
+  margin-right: 25px;
+  border-radius: 5px;
 }
