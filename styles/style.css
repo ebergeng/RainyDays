@@ -87,11 +87,22 @@ header ul li a {
   background-color: #e2a413;
 }
 
-.sub-menu input {
+.search-bar {
+  width: 400px;
+  height: 30px;
+  margin-top: 8px;
+  border-radius: 5px 0px 0px 5px;
+  border-right: 0;
+}
+
+.search-icon {
+  position: absolute;
+  width: 34px;
+  height: 36px;
+  margin-top: 8px;
+}
+
+.search {
   float: right;
-  width: 446px;
-  height: 34px;
-  margin-top: 6px;
-  margin-right: 25px;
-  border-radius: 5px;
+  margin-right: 60px;
 }
