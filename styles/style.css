@@ -3,13 +3,14 @@ body {
   margin: 0;
   min-width: 1200px;
   font-family: "Montserrat";
+  box-sizing: border-box;
 }
 
 /*header and footer*/
 header,
 footer {
   width: 100%;
-  height: 116px;
+  height: 112px;
   background-color: #113340;
 }
 
@@ -19,9 +20,23 @@ header {
   opacity: 0.9;
 }
 
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.top-header {
+  max-width: 1370px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
   float: left;
-  margin-left: 50px;
   padding: 0px;
   margin-bottom: 0;
   height: 116px;
@@ -48,6 +63,7 @@ header ul li {
   display: inline-block;
   height: 75px;
   margin: 30px;
+  margin-right: 0;
 }
 
 header ul li a {
@@ -90,7 +106,6 @@ header ul li a {
 .search-bar {
   width: 400px;
   height: 30px;
-  margin-top: 8px;
   border-radius: 5px 0px 0px 5px;
   border-right: 0;
 }
@@ -99,10 +114,19 @@ header ul li a {
   position: absolute;
   width: 34px;
   height: 36px;
-  margin-top: 8px;
 }
 
 .search {
   float: right;
-  margin-right: 60px;
+  margin-right: 34px;
+}
+
+/*ad-top*/
+
+.top-ad {
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 100%;
+  height: 325px;
+  margin-top: 20px;
 }
