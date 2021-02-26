@@ -17,7 +17,7 @@ footer {
 header {
   position: sticky;
   top: 0;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .background {
@@ -124,9 +124,83 @@ header ul li a {
 /*ad-top*/
 
 .top-ad {
-  border: 1px solid black;
   box-sizing: border-box;
+  justify-content: space-between;
   width: 100%;
+  min-width: 1370px;
   height: 325px;
   margin-top: 20px;
+}
+
+.top-ad-right {
+  background-image: url("../images/advertising/nesna-kommune-84197237-1466155669493_redigert.jpg");
+  background-repeat: no-repeat;
+  background-size: 907px 325px;
+  width: 907px;
+  height: 100%;
+  text-decoration: none;
+}
+
+.top-ad-right h1 {
+  font-size: 42px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #113340;
+  margin: 0;
+  margin-left: 25px;
+}
+
+.top-ad-right h2 {
+  background-color: rgba(226, 164, 19, 0.9);
+  width: 404px;
+  height: 101px;
+  font-size: 36px;
+  color: #113340;
+  margin: 0;
+  margin-left: 25px;
+}
+
+.top-ad-right h3 {
+  text-decoration: underline;
+  color: #113340;
+  font-weight: normal;
+  font-size: 29px;
+  margin-bottom: 0;
+  margin-top: 60px;
+  margin-left: 25px;
+}
+
+.top-ad-right button {
+  float: right;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ccd9cc;
+  width: 155px;
+  height: 32px;
+  border: 3px solid #e2a413;
+  font-size: 19px;
+  font-weight: bolder;
+  margin-right: 25px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.top-ad-left {
+  width: 446px;
+  height: 100%;
+  background-image: url("../images/advertising/raise-3338589_640.jpg");
+  background-repeat: no-repeat;
+  background-size: 446px 325px;
+  text-decoration: none;
+}
+
+.top-ad-left h2 {
+  background-color: #e2a413;
+  color: #113340;
+  height: 117px;
+  width: 340px;
+  margin-top: 208px;
+  font-size: 32px;
+  font-weight: 600;
+  padding-left: 25px;
+  padding-right: 81px;
 }
