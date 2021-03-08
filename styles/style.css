@@ -4,6 +4,7 @@ body {
   min-width: 1200px;
   font-family: "Montserrat";
   box-sizing: border-box;
+  display: grid;
 }
 
 /*header and footer*/
@@ -124,12 +125,14 @@ header ul li a {
 /*ad-top*/
 
 .top-ad {
+  display: grid;
   box-sizing: border-box;
   justify-content: space-between;
   width: 100%;
   min-width: 1370px;
   height: 325px;
   margin-top: 20px;
+  grid-template-columns: 2fr 1fr;
 }
 
 .top-ad-right {
@@ -203,4 +206,10 @@ header ul li a {
   font-weight: 600;
   padding-left: 25px;
   padding-right: 81px;
+}
+
+@media (max-width: 880px) {
+  .top-ad {
+    grid-template-columns: auto;
+  }
 }
