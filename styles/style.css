@@ -1,205 +1,182 @@
-/* Globals */
-/*global*/
+/*Globals*/
 body {
   margin: 0;
-  min-width: 1200px;
   font-family: "Montserrat";
-  box-sizing: border-box;
-  display: grid;
 }
 
-/*header and footer*/
-header,
-footer {
-  width: 100%;
-  height: 112px;
+/* header --------------------*/
+header {
+  height: 116px;
   background-color: #113340;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  opacity: 0.95;
+.icons li {
+  display: inline-block;
+  text-align: center;
+  margin-left: 49px;
+  margin-top: 10px;
 }
 
-.background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+.icons a {
+  color: #ccd9cc;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: lighter;
 }
 
 .logo {
   float: left;
-  padding: 0px;
-  margin-bottom: 0;
-  height: 116px;
 }
 
-.logo img {
-  width: 215px;
-  height: 116px;
+.icons {
+  float: right;
 }
 
 header ul {
-  float: right;
-  margin: 0;
-  padding: 0;
-  height: 116px;
+  padding-left: 0px;
 }
-
-header ul img {
-  width: 46px;
-  height: 42px;
-}
-
-header ul li {
-  display: inline-block;
-  height: 75px;
-  margin: 30px;
-  margin-right: 0;
-}
-
-header ul li a {
-  float: left;
-  color: #ccd9cc;
-  text-decoration: none;
-}
-
-main {
-  display: grid;
-  grid-gap: 10px;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.ad {
-  width: 150px;
-  height: 150px;
-  border: 1px solid black;
-}
-
-/*sub-menu*/
+/*---------------------*/
+/*sub-menu ------------*/
 .sub-menu {
-  clear: both;
-  width: 100%;
-  height: 53px;
+  height: max-content;
   background-color: #ccd9cc;
   box-shadow: 0px 4px 4px gray;
-  margin: 0;
 }
 
-.sub-menu ul {
-  float: left;
-  margin: 0px;
+.sub-nav {
   padding: 0;
 }
 
-.sub-menu ul li {
+.sub-nav li {
   display: inline-block;
-  margin: 0;
-  padding: 17px 30px;
 }
 
-.sub-menu ul li a {
+.sub-nav a {
   color: #113340;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 16px 30px;
 }
 
-.sub-menu li:hover {
+.sub-nav a:hover {
   background-color: #e2a413;
 }
 
-.search-bar {
-  width: 400px;
-  height: 30px;
-  border-radius: 5px 0px 0px 5px;
-  border-right: 0;
+.open-hamburger-menu {
+  display: none;
 }
-
-.search-icon {
-  position: absolute;
-  width: 34px;
-  height: 36px;
-}
-
-.search {
-  float: right;
-  margin-right: 34px;
-}
-
-/*Mobile */
-@media (max-width: 800px) {
-  .icons-disctop {
-    display: none;
-  }
-
-  .top-add,
-  .middle-add,
-  .bottom-add {
-    display: grid;
-    grid-gap: 10px;
-  }
-
-  .top-header {
-    max-width: 400px;
-  }
+/*--------------------*/
+/*desctop-veiw--------*/
+@media (min-width: 1370px) {
+  header,
   .sub-menu {
-    max-width: 400px;
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+  }
+
+  .header-content {
+    min-width: 1370px;
+  }
+
+  .mobile-icons {
+    display: none;
+  }
+
+  .sub-content-desctop {
+    min-width: 1370px;
+  }
+
+  .sub-content-mobile {
+    display: none;
+  }
+
+  .sub-content-desctop {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .search {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .search-bar {
+    width: 100%;
+    height: 28px;
+    border-radius: 5px;
+    border-color: #113340;
+    margin-top: 8px;
+  }
+
+  .search-icon {
+    margin-top: 8px;
   }
 }
-
-/*Disctop*/
-@media (min-width: 801px) {
-  .icons {
-    display: none;
-  }
-  .mobile {
-    display: none;
+/*-------------------*/
+/*mobile-view --------*/
+@media (max-width: 1371px) {
+  .header-content {
+    min-width: 480px;
   }
 
-  .top-add,
-  .middle-add,
-  .bottom-add {
+  .desctop-icons {
+    display: none;
+  }
+
+  .sub-content-desctop {
+    display: none;
+  }
+
+  .sub-content-mobile {
+    clear: both;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
+    min-width: 480px;
   }
-  .top-left {
-    background-image: url("../images/advertising/nesna-kommune-84197237-1466155669493_redigert.jpg");
-    background-repeat: no-repeat;
-    background-size: 907px 325px;
-    width: 907px;
-    height: 235px;
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: inline-block;
+  }
+
+  .open-hamburger-menu ul {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .open-hamburger-menu li {
+    display: grid;
     text-decoration: none;
   }
-
-  .top-header {
-    max-width: 1370px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .sub-menu {
-    max-width: 1370px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .top-right {
-    width: 446px;
-    height: 100%;
-    background-image: url("../images/advertising/raise-3338589_640.jpg");
-    background-repeat: no-repeat;
-    background-size: 446px 325px;
+  .open-hamburger-menu a {
     text-decoration: none;
+    color: #113340;
+    padding: 10px 10px;
+  }
+
+  .open-hamburger-menu a:hover {
+    background-color: #e2a413;
+  }
+
+  .search {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    max-width: 1370px;
+    min-width: 480px;
+    margin-bottom: 10px;
+  }
+  .search-bar {
+    width: 100%;
+    margin-left: 10px;
+    height: 28px;
+    border-radius: 5px;
+    border-color: #113340;
+  }
+
+  .search-icon {
+    margin-right: 10px;
   }
 }
+/*--------------------*/
