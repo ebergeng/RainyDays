@@ -1,3 +1,4 @@
+/* Globals */
 /*global*/
 body {
   margin: 0;
@@ -26,14 +27,6 @@ header {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-}
-
-.top-header {
-  max-width: 1370px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -71,6 +64,19 @@ header ul li a {
   float: left;
   color: #ccd9cc;
   text-decoration: none;
+}
+
+main {
+  display: grid;
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.ad {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
 }
 
 /*sub-menu*/
@@ -122,94 +128,78 @@ header ul li a {
   margin-right: 34px;
 }
 
-/*ad-top*/
+/*Mobile */
+@media (max-width: 800px) {
+  .icons-disctop {
+    display: none;
+  }
 
-.top-ad {
-  display: grid;
-  box-sizing: border-box;
-  justify-content: space-between;
-  width: 100%;
-  min-width: 1370px;
-  height: 325px;
-  margin-top: 20px;
-  grid-template-columns: 2fr 1fr;
+  .top-add,
+  .middle-add,
+  .bottom-add {
+    display: grid;
+    grid-gap: 10px;
+  }
+
+  .top-header {
+    max-width: 400px;
+  }
+  .sub-menu {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.top-ad-right {
-  background-image: url("../images/advertising/nesna-kommune-84197237-1466155669493_redigert.jpg");
-  background-repeat: no-repeat;
-  background-size: 907px 325px;
-  width: 907px;
-  height: 100%;
-  text-decoration: none;
-}
+/*Disctop*/
+@media (min-width: 801px) {
+  .icons {
+    display: none;
+  }
+  .mobile {
+    display: none;
+  }
 
-.top-ad-right h1 {
-  font-size: 42px;
-  font-weight: bolder;
-  text-decoration: none;
-  color: #113340;
-  margin: 0;
-  margin-left: 25px;
-}
+  .top-add,
+  .middle-add,
+  .bottom-add {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+  }
+  .top-left {
+    background-image: url("../images/advertising/nesna-kommune-84197237-1466155669493_redigert.jpg");
+    background-repeat: no-repeat;
+    background-size: 907px 325px;
+    width: 907px;
+    height: 235px;
+    text-decoration: none;
+  }
 
-.top-ad-right h2 {
-  background-color: rgba(226, 164, 19, 0.9);
-  width: 404px;
-  height: 101px;
-  font-size: 36px;
-  color: #113340;
-  margin: 0;
-  margin-left: 25px;
-}
+  .top-header {
+    max-width: 1370px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.top-ad-right h3 {
-  text-decoration: underline;
-  color: #113340;
-  font-weight: normal;
-  font-size: 29px;
-  margin-bottom: 0;
-  margin-top: 60px;
-  margin-left: 25px;
-}
+  .sub-menu {
+    max-width: 1370px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.top-ad-right button {
-  float: right;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #ccd9cc;
-  width: 155px;
-  height: 32px;
-  border: 3px solid #e2a413;
-  font-size: 19px;
-  font-weight: bolder;
-  margin-right: 25px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.top-ad-left {
-  width: 446px;
-  height: 100%;
-  background-image: url("../images/advertising/raise-3338589_640.jpg");
-  background-repeat: no-repeat;
-  background-size: 446px 325px;
-  text-decoration: none;
-}
-
-.top-ad-left h2 {
-  background-color: #e2a413;
-  color: #113340;
-  height: 117px;
-  width: 340px;
-  margin-top: 208px;
-  font-size: 32px;
-  font-weight: 600;
-  padding-left: 25px;
-  padding-right: 81px;
-}
-
-@media (max-width: 880px) {
-  .top-ad {
-    grid-template-columns: auto;
+  .top-right {
+    width: 446px;
+    height: 100%;
+    background-image: url("../images/advertising/raise-3338589_640.jpg");
+    background-repeat: no-repeat;
+    background-size: 446px 325px;
+    text-decoration: none;
   }
 }
