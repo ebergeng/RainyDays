@@ -4,6 +4,18 @@ body {
   font-family: "Montserrat";
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+h1 {
+  color: #113340;
+  font-size: 48px;
+  font-weight: bolder;
+}
+
 /* header --------------------*/
 header {
   height: 116px;
@@ -68,7 +80,11 @@ header ul {
 }
 /*--------------------*/
 /*desctop-veiw--------*/
-@media (min-width: 1370px) {
+@media (min-width: 1371px) {
+  .mobile {
+    display: none;
+  }
+
   header,
   .sub-menu {
     display: flex;
@@ -79,16 +95,8 @@ header ul {
     min-width: 1370px;
   }
 
-  .mobile-icons {
-    display: none;
-  }
-
   .sub-content-desctop {
     min-width: 1370px;
-  }
-
-  .sub-content-mobile {
-    display: none;
   }
 
   .sub-content-desctop {
@@ -111,20 +119,67 @@ header ul {
   .search-icon {
     margin-top: 8px;
   }
+
+  .top-ad {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+  }
+
+  .ad-one {
+    background-image: url("../images/advertising/wintersale.jpg");
+    height: 325px;
+    width: 907px;
+    text-decoration: none;
+  }
+
+  .ad-one h2 {
+    text-decoration: underline;
+    margin-top: 70px;
+    margin-left: 25px;
+    margin-bottom: 0px;
+  }
+
+  .ad-one h1 {
+    margin: 0px 25px;
+  }
+
+  .ad-one p {
+    background-color: rgba(226, 164, 19, 0.9);
+    width: 300px;
+    height: 101px;
+    font-size: 36px;
+    color: #113340;
+    margin: 0px 25px;
+    padding: 0px 25px;
+  }
+
+  .ad-two {
+    background-image: url("../images/advertising/joinrainy.jpg");
+    height: 325px;
+    width: 446px;
+    text-decoration: none;
+  }
+
+  .ad-two p {
+    background-color: #e2a413;
+    color: #113340;
+    height: 117px;
+    margin-top: 208px;
+    margin-bottom: 0px;
+    font-size: 36px;
+    padding-left: 25px;
+  }
 }
 /*-------------------*/
 /*mobile-view --------*/
-@media (max-width: 1371px) {
+@media (max-width: 1370px) {
+  .desctop {
+    display: none;
+  }
+
   .header-content {
     min-width: 480px;
-  }
-
-  .desctop-icons {
-    display: none;
-  }
-
-  .sub-content-desctop {
-    display: none;
   }
 
   .sub-content-mobile {
