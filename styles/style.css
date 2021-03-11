@@ -7,7 +7,11 @@ body {
 main {
   display: flex;
   justify-content: center;
-  margin-top: 8px;
+  margin-top: 5px;
+}
+
+main section {
+  max-width: 1370px;
 }
 
 h1 {
@@ -18,8 +22,10 @@ h1 {
 
 /* header --------------------*/
 header {
+  box-sizing: border-box;
   height: 116px;
   background-color: #113340;
+  padding-left: 5px;
 }
 
 .icons li {
@@ -118,12 +124,15 @@ header ul {
 
   .search-icon {
     margin-top: 8px;
+    margin-right: 5px;
   }
 
   .top-ad {
     display: grid;
+    box-sizing: border-box;
     grid-template-columns: 1fr auto;
     grid-gap: 10px;
+    margin: 5px;
   }
 
   .ad-one {
@@ -185,6 +194,7 @@ header ul {
   .sub-content-mobile {
     clear: both;
     display: grid;
+    position: relative;
     min-width: 480px;
   }
 
@@ -216,22 +226,78 @@ header ul {
   }
 
   .search {
+    position: absolute;
     display: grid;
     grid-template-columns: 1fr auto;
-    max-width: 1370px;
-    min-width: 480px;
+    width: 40%;
     margin-bottom: 10px;
+    right: 0;
+    margin-left: 2px;
   }
   .search-bar {
     width: 100%;
-    margin-left: 10px;
+    margin-top: 2px;
     height: 28px;
     border-radius: 5px;
     border-color: #113340;
   }
 
   .search-icon {
-    margin-right: 10px;
+    margin-top: 2px;
+    margin-right: 5px;
+  }
+
+  .top-ad {
+    display: grid;
+    grid-gap: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height: max-content;
+    margin: 5px;
+  }
+
+  .ad-one {
+    display: inline-block;
+    width: 100%;
+    height: 325px;
+    background-image: url("../images/advertising/wintersale.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+  }
+
+  .ad-one h2 {
+    color: #113340;
+    text-decoration: underline;
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-bottom: 0px;
+  }
+
+  .ad-one h1 {
+    margin: 0px 25px;
+  }
+
+  .ad-one p {
+    background-color: rgba(226, 164, 19, 0.9);
+    width: 300px;
+    height: 101px;
+    font-size: 36px;
+    color: #113340;
+    margin: 0px 25px;
+    padding: 0px 25px;
+  }
+
+  .ad-two {
+    background-color: #e2a413;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .ad-two p {
+    font-size: 36px;
+    color: #113340;
   }
 }
 /*--------------------*/
