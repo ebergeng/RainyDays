@@ -70,10 +70,6 @@ header {
   font-weight: lighter;
 }
 
-.logo {
-  float: left;
-}
-
 .icons {
   float: right;
 }
@@ -253,11 +249,18 @@ footer {
   .mobile {
     display: none;
   }
-
   header,
   .sub-menu {
     display: flex;
     justify-content: center;
+  }
+
+  .logo {
+    background-image: url("../images/logo/RainyDays_Logo_gray_small.png");
+    background-size: cover;
+    height: 116px;
+    width: 217px;
+    float: left;
   }
 
   .header-content {
@@ -360,6 +363,14 @@ footer {
 
   .header-content {
     min-width: 480px;
+  }
+
+  .logo {
+    background-image: url("../images/logo/RainyDays_Logo_gray_small.png");
+    background-size: cover;
+    height: 116px;
+    width: 217px;
+    float: left;
   }
 
   .sub-content-mobile {
@@ -484,13 +495,32 @@ footer {
     width: 100%;
   }
 
-  @media (max-width: 700px) {
-    .bottom-ad {
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: auto auto;
-    }
+  /*--------------------*/
+}
+
+@media (max-width: 700px) {
+  .bottom-ad {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
   }
 
-  /*--------------------*/
+  .tablet {
+    display: none;
+  }
+
+  header {
+    height: 60px;
+  }
+
+  .header-content {
+    display: grid;
+    justify-content: center;
+  }
+
+  .logo {
+    background-image: url("../images/logo/RainyDays_Logo_gray_small_simpel.png");
+    width: 220px;
+    height: 50px;
+  }
 }
