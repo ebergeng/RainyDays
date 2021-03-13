@@ -1,4 +1,4 @@
-/*Globals*/
+/*-----------Globals-------------*/
 body {
   margin: 0;
   font-family: "Montserrat";
@@ -6,6 +6,7 @@ body {
 
 main {
   display: flex;
+  justify-content: center;
   margin-top: 5px;
 }
 
@@ -19,7 +20,35 @@ h1 {
   font-weight: bolder;
 }
 
-/* header --------------------*/
+h1,
+h2,
+h3,
+p {
+  color: #113340;
+}
+
+/* call to actions button*/
+.cta {
+  background-color: #e2a413;
+  color: #113340;
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 4px 4px gray;
+  font-weight: bold;
+}
+
+.cta:hover {
+  cursor: pointer;
+  background-image: radial-gradient(#e2a413, #4e1a06);
+}
+
+.cta:active {
+  box-shadow: none;
+}
+
+/* header*/
 header {
   box-sizing: border-box;
   height: 116px;
@@ -52,8 +81,7 @@ header {
 header ul {
   padding-left: 0px;
 }
-/*---------------------*/
-/*sub-menu ------------*/
+/*sub-menu*/
 .sub-menu {
   height: max-content;
   background-color: #ccd9cc;
@@ -83,15 +111,145 @@ header ul {
 .open-hamburger-menu {
   display: none;
 }
-/*--------------------*/
-/*desctop-veiw--------*/
-@media (min-width: 1371px) {
-  main {
-    display: grid;
-    justify-content: center;
-    margin-top: 5px;
-  }
 
+/*Footer*/
+footer {
+  margin-top: 10px;
+  width: 100%;
+  height: 190px;
+  background-color: #113340;
+}
+/*main-content--------*/
+/*product-ad*/
+.wrapper {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.mid-ad {
+  margin-top: 20px;
+  height: 250px;
+}
+
+.product {
+  position: relative;
+  box-sizing: border-box;
+  width: 420px;
+  margin-right: 35px;
+}
+
+.product img {
+  float: left;
+  box-sizing: border-box;
+  width: 214px;
+  height: 219px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.product h3 {
+  cursor: pointer;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.product p {
+  margin-bottom: 60px;
+}
+
+.product h2 {
+  color: #e2a413;
+  margin-bottom: 5px;
+}
+
+.product:hover {
+  border-bottom: 5px solid #e2a413;
+}
+
+.product img:hover {
+  width: 219px;
+  height: 224px;
+  margin-right: 15px;
+  transition: 0.2s;
+}
+
+/*bottom ad*/
+.bottom-ad {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.ad-one-bottom {
+  position: relative;
+  background-image: url("../images/advertising/person-yellow-raincoat-gloomy-forest-hill-rain_272999-71.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 334px;
+  width: 100%;
+}
+
+.ad-one-wrapper {
+  background-color: #113340;
+  height: 100%;
+  width: 231px;
+  float: right;
+}
+
+.ad-one-wrapper h2 {
+  box-sizing: border-box;
+  position: absolute;
+  display: inline-block;
+  background-color: #e2a413;
+  right: 70px;
+  top: 40px;
+  height: 72px;
+  width: 202px;
+  padding-left: 25px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.ad-one-wrapper h3 {
+  color: #e2a413;
+  margin-top: 140px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.ad-one-wrapper p {
+  color: #e2a413;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.ad-two-bottom {
+  background-image: url("../images/advertising/adventure-4891499_640.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 334px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.ad-two-bottom h2 {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: rgba(226, 164, 19, 0.7);
+  width: 80%;
+  height: max-content;
+  font-size: 32px;
+  font-weight: 600;
+  padding-left: 15px;
+  margin-top: 175px;
+  margin-left: 25px;
+}
+/*----------Globals end!---------------*/
+/*desctop-veiw--------*/
+@media only screen and (min-width: 1371px) {
   .mobile {
     display: none;
   }
@@ -184,16 +342,20 @@ header ul {
     font-size: 36px;
     padding-left: 25px;
   }
+
+  .mid-ad {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 1370px;
+  }
 }
 /*-------------------*/
 /*mobile-view --------*/
 @media (max-width: 1370px) {
   .desctop {
     display: none;
-  }
-
-  main {
-    display: grid;
   }
 
   .header-content {
@@ -256,13 +418,18 @@ header ul {
     margin-right: 5px;
   }
 
+  .wrapper {
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+  }
+
   .top-ad {
     display: grid;
     grid-gap: 5px;
     box-sizing: border-box;
     width: 100%;
     height: max-content;
-    margin: 5px;
   }
 
   .ad-one {
@@ -274,7 +441,6 @@ header ul {
     background-size: cover;
     background-position: center;
     text-decoration: none;
-    margin-right: 10px;
   }
 
   .ad-one h2 {
@@ -303,7 +469,6 @@ header ul {
     background-color: #e2a413;
     text-decoration: none;
     text-align: center;
-    margin-right: 10px;
   }
 
   .ad-two p {
@@ -312,17 +477,20 @@ header ul {
   }
 
   .mid-ad {
-    width: 100%;
-    height: 500px;
-    border: 1px solid black;
-    margin: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     overflow: hidden;
-    overflow-x: auto;
-    white-space: nowrap;
+    overflow-x: scroll;
+    width: 100%;
   }
 
-  .product img {
-    float: left;
+  @media (max-width: 700px) {
+    .bottom-ad {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+    }
   }
+
+  /*--------------------*/
 }
-/*--------------------*/
