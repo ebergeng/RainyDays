@@ -271,7 +271,7 @@ footer {
 }
 /*----------Globals end!---------------*/
 /*desctop-veiw--------*/
-@media (min-width: 1371px) {
+@media (min-width: 1372px) {
   .mobile {
     display: none;
   }
@@ -283,11 +283,11 @@ footer {
   }
 
   .header-content {
-    min-width: 1370px;
+    width: 1370px;
   }
 
   .sub-content-desctop {
-    min-width: 1370px;
+    width: 1370px;
   }
 
   .sub-content-desctop {
@@ -370,12 +370,12 @@ footer {
     grid-template-columns: auto auto auto auto;
     overflow: hidden;
     overflow-x: scroll;
-    width: 1370px;
+    max-width: 1370px;
   }
 }
 /*-------------------*/
 /*mobile and tablet --------*/
-@media (max-width: 1370px) {
+@media (max-width: 1371px) {
   .desctop {
     display: none;
   }
