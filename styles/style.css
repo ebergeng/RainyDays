@@ -228,7 +228,7 @@ footer {
   margin-bottom: 0px;
 }
 
-.ad-one-bottom button {
+.ad-button {
   position: absolute;
   border: 4px solid #e2a413;
   background-color: #113340;
@@ -239,6 +239,7 @@ footer {
   font-weight: bolder;
   right: 50px;
   bottom: 10px;
+  text-align: center;
 }
 
 .ad-one-wrapper p {
