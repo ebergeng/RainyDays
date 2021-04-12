@@ -1,0 +1,445 @@
+:root {
+  --main-blue-color: #113340;
+  --main-gray-color: #ccd9cc;
+  --main-yellow-color: #e2a413;
+  --main-brown-color: #4e1a06;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #113340;
+}
+
+body {
+  font-family: Montserrat, Futura, Sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-width: 250px;
+  margin: 0px;
+}
+
+/*----- header and sub-header-----*/
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-content {
+  background-color: var(--main-blue-color);
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.icons {
+  position: absolute;
+  right: 5px;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.icons li {
+  margin-left: 25px;
+}
+
+.icons a {
+  color: var(--main-gray-color);
+  text-decoration: none;
+  text-align: center;
+}
+
+.sub-menu {
+  position: relative;
+  display: grid;
+}
+
+.sub-content-desctop {
+  position: relative;
+  max-width: 1370px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.search {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 40%;
+  right: 5px;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+.search-bar {
+  width: 100%;
+  margin-top: 2px;
+  height: 28px;
+  border-radius: 5px;
+  border-color: #113340;
+}
+
+.search-icon {
+  margin-top: 2px;
+}
+
+.open-hamburger-menu li {
+  display: grid;
+  margin-left: 0px;
+}
+
+.open-hamburger-menu li a {
+  padding: 5px 20px;
+}
+
+.open-hamburger-menu li:hover {
+  background-color: var(--main-yellow-color);
+}
+
+.open-hamburger-menu ul {
+  padding: 0;
+  margin-left: 5px;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: grid;
+}
+
+.icons li {
+  display: inline-block;
+  text-align: center;
+}
+
+.sub-menu {
+  background-color: var(--main-gray-color);
+  box-shadow: 0px 4px 4px gray;
+}
+
+.open-hamburger-menu li a {
+  text-decoration: none;
+  color: var(--main-blue-color);
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.open-hamburger-menu {
+  display: none;
+}
+
+.sub-content-desctop li a {
+  text-decoration: none;
+  color: var(--main-blue-color);
+}
+/*-End of header and sub-header-----*/
+/*----------------------------------*/
+
+.page-guid {
+  position: absolute;
+  display: flex;
+}
+
+.page-guid p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.page-guid a {
+  text-decoration: none;
+  color: #113340;
+}
+
+footer {
+  background-color: var(--main-blue-color);
+  margin-top: 5px;
+}
+
+footer p,
+footer h1,
+footer h2,
+footer h3,
+footer h4 {
+  color: var(--main-gray-color);
+}
+
+.footer-content {
+  display: flex;
+  gap: 80px;
+  margin-left: 5px;
+}
+
+footer p {
+  margin: 5px;
+}
+
+footer h2 {
+  margin-bottom: 5px;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.cta {
+  background-color: #e2a413;
+  color: #113340;
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 4px 4px gray;
+  font-weight: bold;
+}
+
+.cta:hover {
+  cursor: pointer;
+  background-image: radial-gradient(#e2a413, #4e1a06);
+}
+
+.cta:active {
+  box-shadow: none;
+}
+
+.cta-blue {
+  background-color: #113340;
+  color: #e2a413;
+}
+
+.cta-blue:hover {
+  cursor: pointer;
+  background-image: radial-gradient(#4e1a06, #113340);
+}
+
+.cta-blue:active {
+  box-shadow: none;
+}
+
+.cta-gray {
+  background-color: #ccd9cc;
+  color: #113340;
+}
+
+.cta-gray:hover {
+  cursor: pointer;
+  background-image: radial-gradient(#ccd9cc, #ccd9cc, #113340);
+}
+
+.cta-gray:active {
+  box-shadow: none;
+}
+
+/*---- main content globals*/
+.wrapper {
+  box-sizing: border-box;
+  padding: 5px;
+  min-height: 70vh;
+}
+
+.top-ad {
+  margin-top: 5px;
+  display: grid;
+  gap: 5px;
+  width: 100%;
+}
+
+.ad-one {
+  display: inline-block;
+  width: 100%;
+  min-height: 325px;
+  background-image: url("../images/advertising/wintersale.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+}
+
+.ad-one h2 {
+  color: #113340;
+  text-decoration: underline;
+  margin-top: 40px;
+  margin-left: 25px;
+  margin-bottom: 0px;
+}
+
+.ad-one h1 {
+  margin: 0px 25px;
+}
+
+.ad-one p {
+  background-color: rgba(226, 164, 19, 0.9);
+  height: fit-content;
+  max-width: 300px;
+  font-size: 2rem;
+  color: #113340;
+  margin: 0px 25px;
+  padding: 0px 25px;
+}
+
+.ad-two {
+  background-color: #e2a413;
+  text-decoration: none;
+  text-align: center;
+}
+
+.ad-two p {
+  font-size: 2rem;
+  color: #113340;
+}
+
+.mid-ad {
+  display: grid;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.product {
+  display: flex;
+  gap: 5px;
+}
+
+.product img {
+  height: 220px;
+  margin-right: 5px;
+  margin-top: 30px;
+}
+
+.product h3 {
+  min-height: 44px;
+}
+
+.product h2,
+h4 {
+  margin: 0;
+}
+
+.product h4 {
+  text-decoration: line-through;
+}
+
+.product h2 {
+  color: var(--main-yellow-color);
+}
+
+.product p {
+  min-height: 70px;
+  margin-top: 0px;
+}
+
+.product-text {
+  position: relative;
+}
+
+.product-text button {
+  position: absolute;
+  bottom: 10px;
+}
+
+.bottom-ad {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.ad-one-bottom {
+  position: relative;
+  background-image: url("../images/advertising/person-yellow-raincoat-gloomy-forest-hill-rain_272999-71.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 334px;
+  width: 100%;
+}
+
+.ad-one-wrapper {
+  background-color: #113340;
+  height: 100%;
+  width: 180px;
+  float: right;
+}
+
+.ad-one-wrapper h2 {
+  box-sizing: border-box;
+  position: absolute;
+  display: inline-block;
+  background-color: #e2a413;
+  right: 30px;
+  top: 40px;
+  height: 72px;
+  width: 190px;
+  padding-left: 25px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.ad-one-wrapper h3 {
+  color: #e2a413;
+  margin-top: 140px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.ad-one-wrapper p {
+  color: #e2a413;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.ad-two-bottom {
+  background-image: url("../images/advertising/adventure-4891499_640.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 334px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.ad-two-bottom h2 {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: rgba(226, 164, 19, 0.7);
+  width: 80%;
+  height: max-content;
+  font-size: 32px;
+  font-weight: 600;
+  padding-left: 15px;
+  margin-top: 175px;
+  margin-left: 25px;
+}
+
+/*------ contact page---------*/
+
+.box-wrapper {
+  position: relative;
+  margin: 25px;
+  display: grid;
+  gap: 20px;
+}
+
+.box {
+  width: 377px;
+  height: 225px;
+  background-color: #ccd9cc;
+  box-shadow: 0px 4px 4px var(--main-brown-color);
+  text-align: center;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+.box h1 {
+  margin-top: 10px;
+}
+
+.info-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-content: center;
+}
+
+.contact-info,
+.open-info {
+  text-align: left;
+}

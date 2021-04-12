@@ -1,0 +1,151 @@
+.mobile {
+  display: none;
+}
+
+/* header and sub-header*/
+.logo {
+  background-image: url("../images/logo/RainyDays_Logo_gray_small.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 220px;
+  height: 116px;
+  margin: auto 0px auto 5px;
+}
+
+header {
+  background-color: var(--main-blue-color);
+}
+
+.header-content {
+  max-width: 1370px;
+  margin: auto;
+}
+
+.sub-menu-content {
+  position: relative;
+  max-width: 1370px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.sub-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.sub-nav li {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  width: 153px;
+}
+
+.sub-nav li:hover {
+  cursor: pointer;
+  background-color: var(--main-yellow-color);
+}
+
+.search {
+  top: 8px;
+}
+
+/*--- main desctop----*/
+.wrapper {
+  max-width: 1370px;
+  margin: auto;
+  display: grid;
+}
+
+.top-ad {
+  display: flex;
+}
+
+.mid-ad {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  overflow-x: scroll;
+}
+
+.ad-two {
+  background-image: url("../images/advertising/joinrainy.jpg");
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.ad-two p {
+  background-color: #e2a413;
+  color: #113340;
+  height: 117px;
+  margin-top: 208px;
+  margin-bottom: 0px;
+  font-size: 36px;
+  padding-left: 25px;
+}
+
+.product {
+  min-width: 450px;
+}
+
+.bottom-ad {
+  display: flex;
+}
+
+/*---- main page tablet ---*/
+.mid-ad {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.bottom-ad {
+  display: flex;
+}
+
+/*---product page----*/
+.display-product {
+  display: flex;
+  position: relative;
+  gap: 10px;
+  min-height: auto;
+  margin-left: 5px;
+}
+
+.display-product h1 {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.product-image {
+  margin: 10px;
+  margin-top: 80px;
+}
+
+.display-product-text {
+  margin: 10px;
+  margin-top: 60px;
+}
+
+.display-product-cta {
+  margin: 10px;
+  margin-top: 80px;
+}
+
+/*----- contact page ---------*/
+
+.box-wrapper {
+  display: flex;
+  gap: 25px;
+}
+
+.info-wrapper {
+  display: flex;
+  gap: 25px;
+  margin: auto;
+}
+
+.contact-info,
+.open-info {
+  width: 377px;
+  text-align: left;
+}
