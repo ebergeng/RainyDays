@@ -30,3 +30,18 @@
 }
 
 /*---main Home page---*/
+
+/**/
+@media (max-width: 400px) {
+  .product-image {
+    flex-direction: column;
+  }
+
+  .secondary-image {
+    height: min-content;
+  }
+
+  .secondary-image img {
+    height: 80px;
+  }
+}

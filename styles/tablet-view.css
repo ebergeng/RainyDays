@@ -62,3 +62,33 @@
 .open-info {
   text-align: left;
 }
+
+/* ---- all product page ---*/
+
+@media (min-width: 975px) {
+  .product-text {
+    margin-right: 150px;
+    width: 100%;
+  }
+
+  .product-price {
+    all: revert;
+    position: relative;
+    top: 50px;
+  }
+}
+
+/*-- product page ----*/
+@media (max-width: 840px) {
+  .product-image {
+    flex-direction: column;
+  }
+
+  .secondary-image {
+    height: min-content;
+  }
+
+  .secondary-image img {
+    height: 80px;
+  }
+}

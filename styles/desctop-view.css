@@ -64,7 +64,6 @@ header {
 .mid-ad {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  overflow-x: scroll;
 }
 
 .ad-two {
@@ -101,13 +100,12 @@ header {
   display: flex;
 }
 
-/*---product page----*/
+/*---slected-product page----*/
 .display-product {
   display: flex;
   position: relative;
   gap: 10px;
   min-height: auto;
-  margin-left: 5px;
 }
 
 .display-product h1 {
@@ -130,7 +128,6 @@ header {
   margin: 10px;
   margin-top: 80px;
 }
-
 /*----- contact page ---------*/
 
 .box-wrapper {
@@ -148,4 +145,16 @@ header {
 .open-info {
   width: 377px;
   text-align: left;
+}
+
+/*----all-product page----*/
+.product-text {
+  margin-right: 150px;
+  width: 100%;
+}
+
+.product-price {
+  all: revert;
+  position: relative;
+  top: 50px;
 }
