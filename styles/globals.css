@@ -84,6 +84,7 @@ header {
   margin-top: 2px;
 }
 
+/* ---- hamburger menu -------*/
 .open-hamburger-menu li {
   display: grid;
   margin-left: 0px;
@@ -99,7 +100,6 @@ header {
 
 .open-hamburger-menu ul {
   padding: 0;
-  margin-left: 5px;
 }
 
 #hamburger-menu:checked ~ nav {
@@ -135,6 +135,10 @@ header {
   text-decoration: none;
   color: var(--main-blue-color);
 }
+
+.current {
+  background-color: var(--main-yellow-color);
+}
 /*-End of header and sub-header-----*/
 /*----------------------------------*/
 
@@ -152,21 +156,29 @@ footer h4 {
 }
 
 .footer-content {
+  box-sizing: border-box;
+  padding: 5px;
   position: relative;
-  display: flex;
-  gap: 80px;
+  display: grid;
+  grid-template-columns: auto auto;
   max-width: 1370px;
   margin: auto;
 }
 
 footer p {
   margin: 5px;
+  font-size: 12px;
 }
 
 footer h2 {
   margin-bottom: 5px;
+  font-size: 16px;
   text-decoration: underline;
   font-style: italic;
+}
+
+.footer-content a {
+  text-decoration: none;
 }
 /*---End of footer----*/
 /*--------------------*/
@@ -248,9 +260,10 @@ footer h2 {
   left: 5px;
 }
 
-.page-guid p {
+.page-guid p,
+.page-guid a {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .page-guid a {
@@ -260,3 +273,9 @@ footer h2 {
 
 /*---End of Main content-----*/
 /*---------------------------*/
+
+/*---- product page ----*/
+.product-wrapper {
+  display: grid;
+  gap: 20px;
+}

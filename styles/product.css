@@ -1,51 +1,52 @@
-.product {
-  display: flex;
+.product-page-wrapper {
   position: relative;
-  height: 220px;
+  display: grid;
+}
+
+.product-headline {
+  display: inline-block;
+  margin: auto;
+}
+
+/*--- product ads for all pages ---- */
+.product {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
   box-shadow: 0px 1px 1px gray;
 }
 
-.product img {
-  box-sizing: border-box;
-  position: absolute;
-  height: 240px;
-  margin: 5px;
-  padding-bottom: 50px;
+.product-img {
+  position: relative;
+  width: 170px;
+  height: 170px;
 }
 
-.product-text {
-  margin-left: 190px;
-  margin-right: 10px;
-  max-height: 150px;
-  max-width: 250px;
-  overflow: hidden;
+.image {
+  height: 160px;
 }
 
 .product-price {
-  position: absolute;
   display: flex;
-  bottom: 5px;
-  left: 5%;
+  margin-left: 5px;
+  gap: 20px;
 }
 
-.product-price h2,
-h4 {
-  margin: 10px;
-}
-
-.product-cta {
-  position: absolute;
-  bottom: 25px;
-  right: 20px;
+.on-sale h2 {
+  color: var(--main-yellow-color);
+  margin-bottom: 10px;
 }
 
 .on-sale h4 {
   text-decoration: line-through;
   font-weight: 400;
+  margin-bottom: 5px;
 }
 
-.on-sale h2 {
-  color: var(--main-yellow-color);
+.product-cta button {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
 }
 
 .anime {
@@ -59,7 +60,7 @@ h4 {
 }
 
 .product:hover .image {
-  height: 210px;
+  height: 170px;
   transition: 0.3s;
 }
 
@@ -71,4 +72,57 @@ h4 {
 .product:hover {
   box-shadow: 0px 10px 10px gray;
   transition: 0.5s;
+  z-index: 1;
 }
+/*---- end of product ads -----*/
+
+/*---- dropdown menu to choose category-------*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 200px;
+  border: 2px solid var(--main-blue-color);
+  border-top: none;
+  background-color: white;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: var(--main-blue-color);
+  z-index: 1;
+}
+
+.dropdown:hover .drop-btn {
+  border-bottom: 1px solid var(--main-blue-color);
+  border-radius: 5px 5px 0px 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: grid;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--main-yellow-color);
+}
+
+.drop-btn {
+  width: 200px;
+  height: 30px;
+  border: 2px solid var(--main-blue-color);
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+}
+
+.drop-btn h4 {
+  margin-top: 5px;
+  margin-left: 2px;
+}
+/*---- end of dropdown menu -----*/
