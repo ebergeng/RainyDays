@@ -149,12 +149,19 @@ header {
 
 /*----all-product page----*/
 .product-text {
-  margin-right: 150px;
+  margin-right: 20px;
   width: 100%;
 }
 
 .product-price {
   all: revert;
-  position: relative;
+  position: absolute;
   top: 50px;
+  right: 5px;
+}
+
+/*---shopping-cart---*/
+
+.shopping-cart {
+  width: 700px;
 }

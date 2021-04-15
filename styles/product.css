@@ -1,19 +1,23 @@
 .product {
   display: flex;
   position: relative;
-  box-shadow: var(--main-shadow);
+  height: 220px;
+  box-shadow: 0px 1px 1px gray;
 }
 
 .product img {
   box-sizing: border-box;
-  height: 200px;
+  position: absolute;
+  height: 240px;
   margin: 5px;
   padding-bottom: 50px;
 }
 
 .product-text {
+  margin-left: 190px;
   margin-right: 10px;
   max-height: 150px;
+  max-width: 250px;
   overflow: hidden;
 }
 
@@ -31,9 +35,8 @@ h4 {
 
 .product-cta {
   position: absolute;
-  bottom: 10px;
+  bottom: 25px;
   right: 20px;
-  width: 90px;
 }
 
 .on-sale h4 {
@@ -43,4 +46,29 @@ h4 {
 
 .on-sale h2 {
   color: var(--main-yellow-color);
+}
+
+.anime {
+  width: 0px;
+  height: 5px;
+  background-color: var(--main-yellow-color);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+}
+
+.product:hover .image {
+  height: 210px;
+  transition: 0.3s;
+}
+
+.product:hover .anime {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.product:hover {
+  box-shadow: 0px 10px 10px gray;
+  transition: 0.5s;
 }

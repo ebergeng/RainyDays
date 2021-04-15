@@ -67,14 +67,15 @@
 
 @media (min-width: 975px) {
   .product-text {
-    margin-right: 150px;
+    margin-right: 20px;
     width: 100%;
   }
 
   .product-price {
     all: revert;
-    position: relative;
+    position: absolute;
     top: 50px;
+    right: 5px;
   }
 }
 
@@ -91,4 +92,27 @@
   .secondary-image img {
     height: 80px;
   }
+}
+
+/*---shopping-cart---*/
+.cart-product {
+  display: flex;
+}
+.amount-img {
+  position: absolute;
+  height: 24px;
+  right: 40px;
+  top: 45%;
+  transform: translate(0, -50%);
+}
+
+.cart-product h3 {
+  margin: 0;
+}
+
+.price {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translate(0, -50%);
 }
