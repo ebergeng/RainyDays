@@ -16,6 +16,10 @@
   box-shadow: 0px 1px 1px gray;
 }
 
+.product-text a {
+  text-decoration: none;
+}
+
 .product-img {
   position: relative;
   width: 170px;
@@ -43,10 +47,29 @@
   margin-bottom: 5px;
 }
 
-.product-cta button {
+.product-cta a {
   position: absolute;
   right: 5px;
   bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.product a p {
+  margin-top: 5px;
+}
+
+.stock-section {
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+}
+
+.color-code {
+  height: 9px;
+  width: 9px;
+  background-color: var(--main-yellow-color);
+  margin: auto 5px;
 }
 
 .anime {

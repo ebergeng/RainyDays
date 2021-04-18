@@ -40,14 +40,15 @@
 }
 
 .ad-two {
-  background-color: #e2a413;
-  text-decoration: none;
+  background-color: var(--main-yellow-color);
   text-align: center;
+  text-decoration: none;
 }
 
 .ad-two p {
+  text-decoration: none;
   font-size: 2rem;
-  color: #113340;
+  color: var(--main-blue-color);
 }
 
 .mid-ad {
@@ -74,7 +75,7 @@
 }
 
 .ad-one-wrapper {
-  background-color: #113340;
+  background-color: var(--main-blue-color);
   height: 100%;
   width: 180px;
   float: right;
@@ -84,7 +85,7 @@
   box-sizing: border-box;
   position: absolute;
   display: inline-block;
-  background-color: #e2a413;
+  background-color: var(--main-yellow-color);
   right: 30px;
   top: 40px;
   height: 72px;
@@ -95,14 +96,14 @@
 }
 
 .ad-one-wrapper h3 {
-  color: #e2a413;
+  color: var(--main-yellow-color);
   margin-top: 140px;
   margin-left: 10px;
   margin-bottom: 0px;
 }
 
 .ad-one-wrapper p {
-  color: #e2a413;
+  color: var(--main-yellow-color);
   margin-left: 10px;
   margin-top: 5px;
 }

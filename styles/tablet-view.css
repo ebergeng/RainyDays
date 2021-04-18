@@ -76,6 +76,11 @@
     margin: 25px 5px 0px 10px;
   }
 
+  .stock-section {
+    left: 160px;
+    bottom: 0;
+  }
+
   .product-price h3,
   h4 {
     margin: 0;
@@ -96,7 +101,7 @@
   text-align: left;
 }
 
-/*---shopping-cart---*/
+/*---shopping-cart and billing---*/
 .cart-product {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 1fr;
@@ -120,4 +125,27 @@
 
 .cart-info-item {
   text-align: left;
+}
+
+@media (min-width: 1000px) {
+  .billing-form {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .cta-buttons {
+    grid-template-columns: auto;
+    grid-column: 1 / span 2;
+    width: 180px;
+  }
+
+  .checkout-btn {
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+  }
+
+  .billing-form .checkout-btn {
+    width: 180px;
+  }
 }
