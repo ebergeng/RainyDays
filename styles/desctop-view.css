@@ -239,12 +239,6 @@ h4 {
   text-align: left;
 }
 
-.billing-form {
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  height: 474.812px;
-}
-
 .cta-buttons {
   grid-template-columns: auto;
   grid-column: 1 / span 2;
@@ -257,6 +251,3 @@ h4 {
   bottom: 10px;
 }
 
-.billing-form .checkout-btn {
-  width: 180px;
-}

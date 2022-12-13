@@ -127,25 +127,5 @@
   text-align: left;
 }
 
-@media (min-width: 1000px) {
-  .billing-form {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
 
-  .cta-buttons {
-    grid-template-columns: auto;
-    grid-column: 1 / span 2;
-    width: 180px;
-  }
 
-  .checkout-btn {
-    position: absolute;
-    right: 5px;
-    bottom: 10px;
-  }
-
-  .billing-form .checkout-btn {
-    width: 180px;
-  }
-}

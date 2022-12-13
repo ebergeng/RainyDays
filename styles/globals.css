@@ -185,22 +185,18 @@ footer h2 {
 
 /*----CTA----*/
 .cta {
-  background-color: var(--main-yellow-color);
+  background-color: white;
   color: var(--main-blue-color);
+  border: 4px solid var(--main-yellow-color);
   width: 130px;
   height: 30px;
-  border: none;
   outline: none;
-  box-shadow: var(--main-shadow);
   font-weight: bold;
 }
 
 .cta:hover {
   cursor: pointer;
-  background-image: radial-gradient(
-    var(--main-yellow-color),
-    var(--main-brown-color)
-  );
+  background-color: var(--main-yellow-color);
 }
 
 .cta:active {
@@ -208,16 +204,14 @@ footer h2 {
 }
 
 .cta-blue {
-  background-color: var(--main-blue-color);
-  color: var(--main-yellow-color);
+  border: 4px solid var(--main-blue-color);
+  color: var(--main-blue-color);
 }
 
 .cta-blue:hover {
   cursor: pointer;
-  background-image: radial-gradient(
-    var(--main-brown-color),
-    var(--main-blue-color)
-  );
+  background-color: var(--main-blue-color);
+  color: var(--main-yellow-color);
 }
 
 .cta-blue:active {

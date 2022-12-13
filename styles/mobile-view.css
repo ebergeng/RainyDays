@@ -2,6 +2,10 @@
   display: none;
 }
 
+.billing-form {
+    flex-direction: column;
+}
+
 .header-content {
   height: 80px;
 }
