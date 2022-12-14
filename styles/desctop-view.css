@@ -135,13 +135,15 @@ header {
 .info-wrapper {
   display: flex;
   gap: 25px;
-  margin: auto;
+  box-sizing: border-box;
+  padding: 25px;
 }
 
 .contact-info,
 .open-info {
-  width: 377px;
+  width: 100%;
   text-align: left;
+
 }
 
 /*----all-product page----*/

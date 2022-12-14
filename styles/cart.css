@@ -78,10 +78,13 @@
 
 .cart-btn a {
   display: inline-block;
-  height: 30px;
+  height: 40px;
   text-align: center;
   margin-left: 5px;
   text-decoration: none;
+  width: 150px;
+  box-sizing: border-box;
+  padding: 5px;
 }
 
 .checkout {

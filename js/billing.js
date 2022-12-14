@@ -1,3 +1,7 @@
+import { is_number } from "../js/functions.js";
+import { is_string } from "../js/functions.js";
+import { check_lenght } from "../js/functions.js";
+import { check_validateion_list } from "../js/functions.js";
 /* billing info */
 const form = document.querySelector(".billing-form");
 const fullName = document.querySelector("#name");
@@ -153,45 +157,6 @@ function validate() {
     }
 }
 
-
-/* check lengt of input */
-function check_lenght(value, minLenght, maxLenght = 100) {
-    if(value.trim().length >= minLenght && value.trim().length <= maxLenght) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-
-/* check if hole string is str */
-function is_string(value) {
-    for(let i = 0; i < value.length; i++){
-        let num = parseInt(value[i])
-        if(Number.isInteger(num)) {
-            return false
-        }
-        else {
-            continue
-    }
-    }
-    return true
-}
-
-/* check if hole number is int */
-function is_number(value) {
-    for(let i = 0; i < value.length; i++){
-        let num = parseInt(value[i])
-        if(Number.isInteger(num)) {
-            continue
-        }
-        else {
-            return false
-    }
-    }
-    return true
-}
-
 function display_error(label) {
     label.style.color = "red"
     cardInfo.style.marginBottom  = "130px"
@@ -202,12 +167,5 @@ function correct(label) {
     label.style.color = "#113340"
 }
 
-function check_validateion_list(list) {
-    return list.every(function(index) {
-        return index
-    });
-  }
-    
-
-
 form.addEventListener("submit", validate)
+
