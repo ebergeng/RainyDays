@@ -70,5 +70,25 @@
 .sub-button {
   width: 100%;
   text-align: right;
+  display: flex;
+  gap: 25px;
+  justify-content: flex-end;
+}
 
+.error-msg {
+  display: none;
+  color: red;
+  width: 100%;
+  max-width: 250px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.sendt-msg {
+  display: none;
+  color: green;
+  width: 100%;
+  max-width: 250px;
+  margin-top: 5px;
+  text-align: left;
 }

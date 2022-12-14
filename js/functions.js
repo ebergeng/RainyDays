@@ -45,3 +45,9 @@ export function check_validateion_list(list) {
   export function test() {
     console.log("this is a test");
   }
+
+export function check_email(email) {
+    const regEx = /\S+@\S+\.\S+/;
+    const pM = regEx.test(email);
+    return pM;
+}
