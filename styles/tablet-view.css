@@ -41,6 +41,7 @@
 }
 
 @media (max-width: 800px) {
+
   .product-image {
     flex-direction: column;
   }
@@ -86,6 +87,8 @@
     margin: 0;
     display: inline;
   }
+
+
 }
 
 /* ---contact page --------*/

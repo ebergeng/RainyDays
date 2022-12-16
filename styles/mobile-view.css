@@ -1,3 +1,7 @@
+.chart-wrapper {
+  flex-direction: column;
+}
+
 .desctop {
   display: none;
 }
