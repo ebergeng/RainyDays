@@ -1,8 +1,6 @@
-import { price } from "./chart.js";
-import { updeted_chart } from "./chart.js";
-var a = new Date();
+import { price } from "./functions.js";
+import { updeted_chart } from "./functions.js";
 
-console.log(localStorage)
 
 
 const product = document.querySelectorAll(".product");
@@ -18,7 +16,7 @@ for(let i = 0; i < cta.length; i++) {
     cta[i].addEventListener("click", function() {
         updeted_chart(jackets[1].price)
         chart.innerHTML = `<img src="images/icons/shopping_cart.png" alt="shopping_cart icon"><br>${price()},-`
-        localStorage.a = price();
+        
     })
     cta[i].addEventListener("mouseover", function() {
         product.forEach(function(t) {

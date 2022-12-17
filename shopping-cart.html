@@ -69,7 +69,7 @@
       </section>
     </header>
     <main>
-      <div class="chart-wrapper">
+      <div class="cart-wrapper">
           <section class="shopping-cart">
             <h1>Shopping cart</h1>
               <div class="cart-content">
@@ -110,11 +110,11 @@
               <p>Allmost done with your order</p>
               <p>To speed opp the prosess, please sing in</p>
               <div class="burtton-wrap">
-                <button class="cta">Sign in</button>
+                <button class="cta" id="sign-in">Sign in</button>
                 <p>or</p>
-                <button class="cta cta-blue">Continue</button>
+                <button class="cta cta-blue" id="continue">Continue</button>
               </div>
-              <p>With out signing in</p>
+              <p>With out signing in to finalize your order</p>
             </div>
           </section>
           <section class="pursher stage2">
@@ -123,8 +123,8 @@
               <div class="bar active"></div>
               <div class="bar"></div>
             </div>
-            <div class="billing-info">
-              <h1>Billing info</h1>
+            <form class="billing-info">
+              <h3>Billing information</h3>
               <label for="name" class="name-label">FULL NAME</label>
               <input type="name" class="name" id="name">
               <label for="adress" class="adress-label">ADRESS</label>
@@ -382,8 +382,45 @@
                       <option value="Zambia">Zambia</option>
                       <option value="Zimbabwe">Zimbabwe</option>
               </select>
+              <div class="buttons">
+                <button class="cta cta-blue back" id="back">Back</button>
+                <button class="cta continue" id="continue">Continue</button>
+              </form>
             </div>
           </section>
+          <section class="pursher stage3">
+            <div class="progressbar">
+              <div class="bar active"></div>
+              <div class="bar active"></div>
+              <div class="bar active"></div>
+            </div>
+            <form class="card-info">
+              <h3>Credit card</h3>
+              <label for="card-number" class="card-number-label">CARD NUMBER</label>
+              <div class="visa">
+                  <input type="text" class="card-number">
+                  <img src="/images/icons/VISA.png" alt="img of visa logo">
+              </div>
+              <label for="card-name" class="card-name-label">CARDHOLDER NAME</label>
+              <input type="name" class="card-name">
+              <label for="date" class="date-label">EXPIRE DATE</label>
+              <input type="date" class="date">
+              <label for="cvv" class="cvv-label">CVV</label>
+              <input type="text" class="cvv">
+              <div class="buttons">
+                <button class="cta cta-blue back" id="back">Back</button>
+                <button class="cta continue" id="continue">Finish</button>
+              </div>
+            </form>
+          </section>
+          <section class="billing-succsess stage4">
+            <h1>Billing<br>Succsess!</h1>
+  
+            <img src="images/icons/succsess.png" alt="">
+            <p>Rainy Days thanks you for Your order.</p>
+            <a href="index.html" class="cta">Back to shopping</a>
+          </section>
+          
       </div>
     </main>
     <footer>
@@ -405,5 +442,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="js/cart.js"></script>
   </body>
 </html>
