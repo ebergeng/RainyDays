@@ -282,6 +282,7 @@ footer h2 {
   right: 0;
   background-color: rgba(0, 0, 0, 0.822);
   position: fixed;
+  z-index: 99;
 }
 
 .overlay-wrapper {
