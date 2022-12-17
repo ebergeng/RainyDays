@@ -185,18 +185,18 @@ footer h2 {
 
 /*----CTA----*/
 .cta {
-  background-color: white;
+  background-color: var(--main-yellow-color);
   color: var(--main-blue-color);
-  border: 4px solid var(--main-yellow-color);
   width: 130px;
   height: 30px;
   outline: none;
   font-weight: bold;
+  border: none;
 }
 
 .cta:hover {
   cursor: pointer;
-  background-color: var(--main-yellow-color);
+  background-color: #e6c26f;
 }
 
 .cta:active {
@@ -204,13 +204,13 @@ footer h2 {
 }
 
 .cta-blue {
-  border: 4px solid var(--main-blue-color);
-  color: var(--main-blue-color);
+  background-color:var(--main-blue-color);
+  color: var(--main-yellow-color);
 }
 
 .cta-blue:hover {
   cursor: pointer;
-  background-color: var(--main-blue-color);
+  background-color: #3a6270;
   color: var(--main-yellow-color);
 }
 
@@ -273,3 +273,67 @@ footer h2 {
   display: grid;
   gap: 20px;
 }
+
+.overlay {
+  display: none;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.822);
+  position: fixed;
+}
+
+.overlay-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  position: relative;
+  max-width: 300px;
+  min-width: 200px;
+  height: 400px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 5px;
+}
+
+.overlay-content h2 {
+  margin: 0;
+}
+
+.overlay-content img {
+  margin-top: 30px;
+  width: 100px;
+}
+
+.total-price {
+  position: absolute;
+  width: 100%;
+  bottom: 65px;
+  left: 5px;
+}
+
+.overlay-buttons {
+  position: absolute;
+  display: grid;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  gap: 5px;
+  bottom: 0;
+}
+
+.overlay-buttons button {
+  width: 100%;
+}
+
