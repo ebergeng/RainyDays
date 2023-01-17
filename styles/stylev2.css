@@ -1,5 +1,0 @@
-@import url("../styles/globals.css");
-@import "../styles/mobile-view.css" screen and (max-width: 700px);
-@import "../styles/tablet-view.css" screen and (max-width: 1369px) and
-  (min-width: 701px);
-@import "../styles/desctop-view.css" screen and (min-width: 1370px);
