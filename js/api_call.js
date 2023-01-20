@@ -8,12 +8,12 @@ const params = new URLSearchParams(queryString);
 const queryId = params.get("id")
 console.log(queryId)
 
-let baseUrl = "http://myflashcard.org/wp-json/wc/store/products";
+let baseUrl = "https://myflashcard.org/wp-json/wc/store/products";
 
 async function apiCall() {
     let jackets;
     if (queryId){
-        const newUrle = `http://myflashcard.org/wp-json/wc/store/products/${queryId}`;
+        const newUrle = `https://myflashcard.org/wp-json/wc/store/products/${queryId}`;
         try {
             let respons = await fetch(newUrle);
             let data = await respons.json()
