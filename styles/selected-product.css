@@ -4,6 +4,7 @@
   background-color: var(--main-gray-color);
   box-sizing: border-box;
   display: grid;
+  width: 100%;
   grid-template-areas:
     "headline headline"
     "image image"

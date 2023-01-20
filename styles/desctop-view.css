@@ -125,6 +125,7 @@ header {
 .display-product-cta {
   margin: 10px;
   margin-top: 80px;
+  min-width: 250px;
 }
 /*----- contact page ---------*/
 .box-wrapper {
@@ -253,3 +254,6 @@ h4 {
   bottom: 10px;
 }
 
+.mid-ad {
+  height: 20000px;
+}

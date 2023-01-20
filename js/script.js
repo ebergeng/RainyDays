@@ -51,9 +51,7 @@ let jackets = {
 };
 
 
-overlay.addEventListener("click", function() {
-    overlay.style.display = "none"
-})
+
 
 checkout.addEventListener("click", function() {
     location.replace("shopping-cart.html")
@@ -63,8 +61,4 @@ checkout.addEventListener("click", function() {
 const chart = document.querySelector(".chart");
 chart.innerHTML = `<img src="images/icons/shopping_cart.png" alt="shopping_cart icon"><br>${price()},-`
 let chartPrice = 0
-
-
-
-
 
