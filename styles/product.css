@@ -1,0 +1,168 @@
+.product-page-wrapper {
+  position: relative;
+  display: grid;
+}
+
+.product-headline {
+  display: inline-block;
+  margin: auto;
+}
+
+/*--- product ads for all pages ---- */
+.product {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  box-shadow: 0px 1px 1px gray;
+  text-decoration: none;
+}
+
+.product:hover {
+  cursor: pointer;
+}
+
+.product-text a {
+  text-decoration: none;
+}
+
+.product-img {
+  position: relative;
+  width: 170px;
+  height: 170px;
+}
+
+.image {
+  height: 160px;
+}
+
+.product-price {
+  display: flex;
+  margin-left: 5px;
+  gap: 20px;
+}
+
+.on-sale h2 {
+  color: var(--main-yellow-color);
+  margin-bottom: 10px;
+}
+
+.on-sale h4 {
+  text-decoration: line-through;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.product-cta a, .product-cta button  {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.product a p {
+  margin-top: 5px;
+}
+
+.stock-section {
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+}
+
+.color-code {
+  height: 9px;
+  width: 9px;
+  margin: auto 5px;
+}
+
+.low-on-stock{
+  background-color: var(--main-yellow-color);
+}
+
+.out-of-stock{
+  background-color: red;
+}
+
+.full-on-stock {
+  background-color: green;
+}
+  
+
+.anime {
+  width: 0px;
+  height: 5px;
+  background-color: var(--main-yellow-color);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+}
+
+.product:hover .image {
+  height: 170px;
+  transition: 0.3s;
+}
+
+.product:hover .anime {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.product:hover {
+  box-shadow: 0px 10px 10px gray;
+  transition: 0.5s;
+  z-index: 1;
+}
+/*---- end of product ads -----*/
+
+/*---- dropdown menu to choose category-------*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 200px;
+  border: 2px solid var(--main-blue-color);
+  border-top: none;
+  background-color: white;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: var(--main-blue-color);
+  z-index: 1;
+}
+
+.dropdown:hover .drop-btn {
+  border-bottom: 1px solid var(--main-blue-color);
+  border-radius: 5px 5px 0px 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: grid;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--main-yellow-color);
+}
+
+.drop-btn {
+  width: 200px;
+  height: 30px;
+  border: 2px solid var(--main-blue-color);
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+}
+
+.drop-btn h4 {
+  margin-top: 5px;
+  margin-left: 2px;
+}
+/*---- end of dropdown menu -----*/

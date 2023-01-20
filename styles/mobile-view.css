@@ -1,0 +1,52 @@
+
+
+.desctop {
+  display: none;
+}
+
+.billing-form {
+    flex-direction: column;
+}
+
+.header-content {
+  height: 80px;
+}
+
+.logo {
+  background-image: url("../images/logo/RainyDays_Logo_gray_small_simpel.png");
+  background-size: contain;
+  width: 220px;
+  height: 50px;
+  margin: auto 0px auto 5px;
+}
+@media (max-width: 400px) {
+  .logo {
+    background-image: url("../images/logo/RD_Logo_gray_small_simpel.png");
+    background-repeat: no-repeat;
+  }
+
+  .footer-content {
+    grid-template-columns: auto;
+  }
+}
+
+.icons {
+  margin-top: 10px;
+}
+
+/*---main Home page---*/
+
+/**/
+@media (max-width: 400px) {
+  .product-image {
+    flex-direction: column;
+  }
+
+  .secondary-image {
+    height: min-content;
+  }
+
+  .secondary-image img {
+    height: 80px;
+  }
+}

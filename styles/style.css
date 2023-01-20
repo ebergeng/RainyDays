@@ -1,0 +1,543 @@
+/*-----------Globals-------------*/
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+main section {
+  max-width: 1370px;
+}
+
+h1 {
+  color: #113340;
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #113340;
+}
+
+/* call to actions button*/
+.cta {
+  background-color: #e2a413;
+  color: #113340;
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 4px 4px gray;
+  font-weight: bold;
+}
+
+.cta:hover {
+  cursor: pointer;
+  background-image: radial-gradient(#e2a413, #4e1a06);
+}
+
+.cta:active {
+  box-shadow: none;
+}
+
+/* header*/
+header {
+  box-sizing: border-box;
+  height: 116px;
+  background-color: #113340;
+  padding-left: 5px;
+  min-width: 300px;
+}
+
+.icons li {
+  display: inline-block;
+  text-align: center;
+  margin-left: 49px;
+  margin-top: 10px;
+}
+
+.icons a {
+  color: #ccd9cc;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.logo {
+  float: left;
+  background-image: url("../images/logo/RainyDays_Logo_gray_small.png");
+  height: 116px;
+  width: 220px;
+}
+
+.icons {
+  float: right;
+}
+
+header ul {
+  padding-left: 0px;
+}
+/*sub-menu*/
+.sub-menu {
+  height: max-content;
+  background-color: #ccd9cc;
+  box-shadow: 0px 4px 4px gray;
+}
+
+.sub-nav {
+  padding: 0;
+}
+
+.sub-nav li {
+  display: inline-block;
+}
+
+.sub-nav a {
+  color: #113340;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 16px 30px;
+}
+
+.sub-nav a:hover {
+  background-color: #e2a413;
+}
+
+.open-hamburger-menu {
+  display: none;
+}
+
+/*Footer*/
+footer {
+  margin-top: 10px;
+  width: 100%;
+  height: 190px;
+  background-color: #113340;
+}
+/*main-content--------*/
+/*product-ad*/
+.wrapper {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.mid-ad {
+  margin-top: 20px;
+  height: 250px;
+}
+
+.product {
+  position: relative;
+  box-sizing: border-box;
+  width: 420px;
+  margin-right: 35px;
+}
+
+.product img {
+  float: left;
+  box-sizing: border-box;
+  width: 214px;
+  height: 219px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.product h3 {
+  cursor: pointer;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.product p {
+  margin-bottom: 60px;
+}
+
+.product h2 {
+  color: #e2a413;
+  margin-bottom: 5px;
+}
+
+.product:hover {
+  border-bottom: 5px solid #e2a413;
+}
+
+.product img:hover {
+  width: 219px;
+  height: 224px;
+  margin-right: 15px;
+  transition: 0.2s;
+}
+
+/*bottom ad*/
+.bottom-ad {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.ad-one-bottom {
+  position: relative;
+  background-image: url("../images/advertising/person-yellow-raincoat-gloomy-forest-hill-rain_272999-71.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 334px;
+  width: 100%;
+}
+
+.ad-one-wrapper {
+  background-color: #113340;
+  height: 100%;
+  width: 231px;
+  float: right;
+}
+
+.ad-one-wrapper h2 {
+  box-sizing: border-box;
+  position: absolute;
+  display: inline-block;
+  background-color: #e2a413;
+  right: 70px;
+  top: 40px;
+  height: 72px;
+  width: 202px;
+  padding-left: 25px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.ad-one-wrapper h3 {
+  color: #e2a413;
+  margin-top: 140px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.ad-button {
+  position: absolute;
+  border: 4px solid #e2a413;
+  background-color: #113340;
+  color: #ccd9cc;
+  width: 133px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bolder;
+  right: 50px;
+  bottom: 10px;
+  text-align: center;
+}
+
+.ad-one-wrapper p {
+  color: #e2a413;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.ad-two-bottom {
+  background-image: url("../images/advertising/adventure-4891499_640.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 334px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.ad-two-bottom h2 {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: rgba(226, 164, 19, 0.7);
+  width: 80%;
+  height: max-content;
+  font-size: 32px;
+  font-weight: 600;
+  padding-left: 15px;
+  margin-top: 175px;
+  margin-left: 25px;
+}
+/*----------Globals end!---------------*/
+/*desctop-veiw--------*/
+@media (min-width: 1372px) {
+  .mobile {
+    display: none;
+  }
+
+  header,
+  .sub-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-content {
+    width: 1370px;
+  }
+
+  .sub-content-desctop {
+    width: 1370px;
+  }
+
+  .sub-content-desctop {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .search {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .search-bar {
+    width: 100%;
+    height: 28px;
+    border-radius: 5px;
+    border-color: #113340;
+    margin-top: 8px;
+  }
+
+  .search-icon {
+    margin-top: 8px;
+    margin-right: 5px;
+  }
+
+  .top-ad {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+    margin: 5px;
+  }
+
+  .ad-one {
+    background-image: url("../images/advertising/wintersale.jpg");
+    height: 325px;
+    width: 907px;
+    text-decoration: none;
+  }
+
+  .ad-one h2 {
+    text-decoration: underline;
+    margin-top: 70px;
+    margin-left: 25px;
+    margin-bottom: 0px;
+  }
+
+  .ad-one h1 {
+    margin: 0px 25px;
+  }
+
+  .ad-one p {
+    background-color: rgba(226, 164, 19, 0.9);
+    width: 300px;
+    height: 101px;
+    font-size: 36px;
+    color: #113340;
+    margin: 0px 25px;
+    padding: 0px 25px;
+  }
+
+  .ad-two {
+    background-image: url("../images/advertising/joinrainy.jpg");
+    height: 325px;
+    width: 446px;
+    text-decoration: none;
+  }
+
+  .ad-two p {
+    background-color: #e2a413;
+    color: #113340;
+    height: 117px;
+    margin-top: 208px;
+    margin-bottom: 0px;
+    font-size: 36px;
+    padding-left: 25px;
+  }
+
+  .mid-ad {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    overflow: hidden;
+    overflow-x: scroll;
+    max-width: 1370px;
+  }
+}
+/*-------------------*/
+/*mobile and tablet --------*/
+@media (max-width: 1371px) {
+  .desctop {
+    display: none;
+  }
+
+  .header-content {
+    min-width: 400px;
+  }
+
+  .sub-content-mobile {
+    clear: both;
+    display: grid;
+    position: relative;
+    min-width: 400px;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: inline-block;
+  }
+
+  .open-hamburger-menu ul {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .open-hamburger-menu li {
+    display: grid;
+    text-decoration: none;
+  }
+  .open-hamburger-menu a {
+    text-decoration: none;
+    color: #113340;
+    padding: 10px 10px;
+  }
+
+  .open-hamburger-menu a:hover {
+    background-color: #e2a413;
+  }
+
+  .search {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 40%;
+    right: 0;
+    margin-left: 2px;
+    margin-top: 2px;
+  }
+  .search-bar {
+    width: 100%;
+    margin-top: 2px;
+    height: 28px;
+    border-radius: 5px;
+    border-color: #113340;
+  }
+
+  .search-icon {
+    margin-top: 2px;
+    margin-right: 5px;
+  }
+
+  .wrapper {
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .top-ad {
+    display: grid;
+    grid-gap: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height: max-content;
+  }
+
+  .ad-one {
+    display: inline-block;
+    width: 100%;
+    height: 325px;
+    background-image: url("../images/advertising/wintersale.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+  }
+
+  .ad-one h2 {
+    color: #113340;
+    text-decoration: underline;
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-bottom: 0px;
+  }
+
+  .ad-one h1 {
+    margin: 0px 25px;
+  }
+
+  .ad-one p {
+    background-color: rgba(226, 164, 19, 0.9);
+    width: 300px;
+    height: 101px;
+    font-size: 36px;
+    color: #113340;
+    margin: 0px 25px;
+    padding: 0px 25px;
+  }
+
+  .ad-two {
+    background-color: #e2a413;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .ad-two p {
+    font-size: 36px;
+    color: #113340;
+  }
+
+  .mid-ad {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  /*--------------------*/
+}
+/*mobile view*/
+@media only screen and (max-width: 600px) {
+  .tablet {
+    display: none;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  .logo {
+    float: left;
+    background-image: url("../images/logo/RainyDays_Logo_gray_small_simpel.png");
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 220px;
+    margin-top: 15px;
+  }
+
+  .icons {
+    position: absolute;
+    right: 5px;
+    margin-left: 0;
+    margin-top: 0px;
+  }
+
+  .bottom-ad {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+}

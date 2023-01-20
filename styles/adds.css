@@ -1,0 +1,143 @@
+.top-ad {
+  margin-top: 5px;
+  display: grid;
+  gap: 5px;
+  width: 100%;
+}
+
+.ad-one {
+  display: inline-block;
+  width: 100%;
+  min-height: 325px;
+  background-image: url("../images/advertising/wintersale.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+}
+
+.ad-one h2 {
+  color: var(--main-blue-color);
+  text-decoration: underline;
+  margin-top: 40px;
+  margin-left: 25px;
+  margin-bottom: 0px;
+}
+
+.ad-one h1 {
+  font-size: 3rem;
+  margin: 0px 25px;
+}
+
+.ad-one p {
+  background-color: rgba(226, 164, 19, 0.9);
+  height: fit-content;
+  max-width: 320px;
+  font-size: 2rem;
+  color: var(--main-blue-color);
+  margin: 0px 25px;
+  padding: 0px 25px;
+}
+
+.ad-two {
+  background-color: var(--main-yellow-color);
+  text-align: center;
+  text-decoration: none;
+}
+
+.ad-two p {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--main-blue-color);
+}
+
+.mid-ad {
+  display: grid;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.bottom-ad {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.ad-one-bottom {
+  position: relative;
+  background-image: url("../images/advertising/person-yellow-raincoat-gloomy-forest-hill-rain_272999-71.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 335px;
+  width: 100%;
+}
+
+.ad-one-wrapper {
+  background-color: var(--main-blue-color);
+  height: 100%;
+  width: 180px;
+  float: right;
+}
+
+.ad-one-wrapper h2 {
+  box-sizing: border-box;
+  position: absolute;
+  display: inline-block;
+  background-color: var(--main-yellow-color);
+  right: 30px;
+  top: 40px;
+  height: 72px;
+  width: 190px;
+  padding-left: 25px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.ad-one-wrapper h3 {
+  color: var(--main-yellow-color);
+  margin-top: 140px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.ad-one-wrapper p {
+  color: var(--main-yellow-color);
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.ad-two-bottom {
+  background-image: url("../images/advertising/adventure-4891499_640.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 340px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.ad-two-bottom h2 {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: rgba(226, 164, 19, 0.7);
+  width: 80%;
+  height: max-content;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 165px 0px 0px 25px;
+}
+
+.dev-box {
+  height: 320px;
+  width: 500px;
+  background-color: var(--main-gray-color);
+  margin: auto;
+  box-shadow: var(--main-shadow);
+}
+
+.dev-box h1 {
+  display: block;
+  margin: auto;
+}
