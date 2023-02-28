@@ -35,6 +35,7 @@ gh repo clone ebergeng/RainyDays
 
 Run index.html with with live server inn VS Code or just open it in a web-browser.
 
+Or check out the site here: https://app.netlify.com/sites/velvety-blini-002fa1/overview
 
 
 ## Contributing
