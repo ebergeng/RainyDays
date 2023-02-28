@@ -11,6 +11,7 @@ Add a more detailed description of what your project entails and set out to do.
 - web commerce
 - Rain jackets
 - sports commerce
+- WordPress as headless cms
 
 ## Built With
 
