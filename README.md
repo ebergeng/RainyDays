@@ -2,24 +2,23 @@
 
 ![image](images/skjermbilde_rainy-days.jpg)
 
-A simple overview of the use/purpose of the project.
+My first webpage built with html, css and js.
 
 ## Description
 
 Add a more detailed description of what your project entails and set out to do.
 
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+- web commerce
+- Rain jackets
+- sports commerce
 
 ## Built With
 
 You can list a the tech stack that you've used over here
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- HTML
+- CSS
+- JavaScript
 
 ## Getting Started
 
