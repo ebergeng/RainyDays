@@ -29,24 +29,14 @@ This is where you list how to get the project started. It typically just include
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
+gh repo clone ebergeng/RainyDays
 ```
 
 ### Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
+Run index.html with with live server inn VS Code or just open it in a web-browser.
 
-To run the app, run the following commands:
 
-```bash
-npm run start
-```
 
 ## Contributing
 
